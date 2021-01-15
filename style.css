@@ -33,7 +33,7 @@ header:hover {
 	
 }
 
-.score_board {
+.score-board {
 	margin: 20px auto;
 	border: 5px solid white;
 	border-radius: 10px;
@@ -107,19 +107,39 @@ header:hover {
 }
 
 
-#action-message{
+#action-msg {
 	text-align: center;
 	color: white;
 	font-family: Asap, sans-serif;
 	font-weight: bold;
 	font-size: 30px;
-	
-	
-	
 }
 
+.green-border {
+	border: 5px solid #5ddc7d;
+	box-shadow: 0 0 50px #41c44a;
+}
 
+.green-border:hover {
+	border: 5px solid #5ddc7d;
+}
 
+.red-border {
+	border: 5px solid #fc232b;
+	box-shadow: 0 0 50px #d11116;
+}
 
+.red-border:hover {
+	border: 5px solid #fc232b;
+}
+
+.grey-border {
+	border: 5px solid #574627;
+	box-shadow: 0 0 50px #8a8479;
+}
+
+.grey-border:hover {
+	border: 5px solid #574627;
+}
 
 
