@@ -10,6 +10,8 @@ const result_p = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
+const choices_div = document.querySelector(".choices");
+const action_p = document.getElementById("action-msg");
 
 function getCompChoice() {
 	const choices = ['r', 'p', 's'];
@@ -35,6 +37,10 @@ function win(userChoice, compChoice) {
 	userChoice_div.classList.add('green-border:hover');
 	setTimeout(() => {userChoice_div.classList.remove('green-border')}, 1000);
 	setTimeout(() => {userChoice_div.classList.remove('green-border:hover')}, 1000);
+	if (userScore == 2) {
+		choices_div.innerHTML  = `You won ${userScore}:${compScore}!`
+		action_p.innerHTML = `<button><span onclick="location.reload()">Play Again?</span></button>`;
+	}
 }
 
 function lose(userChoice, compChoice) {
@@ -48,7 +54,11 @@ function lose(userChoice, compChoice) {
 	userChoice_div.classList.add('red-border');
 	userChoice_div.classList.add('red-border:hover');
 	setTimeout(() => {userChoice_div.classList.remove('red-border')}, 1000);
-	setTimeout(() => {userChoice_div.classList.remove('red-border:hover')}, 1000); 
+	setTimeout(() => {userChoice_div.classList.remove('red-border:hover')}, 1000);
+	if (compScore == 2) {
+		choices_div.innerHTML  = `You lost ${userScore}:${compScore}!`
+		action_p.innerHTML = `<button><span onclick="location.reload()">Play Again?</span></button>`;
+	}
 }
 
 function draw(userChoice, compChoice) {
