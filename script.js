@@ -18,8 +18,8 @@ function getCompChoice() {
 }
 
 function convertToWord(letter) {
-	if (letter == r) return "Rock";
-	if (letter == p) return "Paper";
+	if (letter === "r") return "Rock";
+	if (letter === "p") return "Paper";
 	return "Scissors";
 }
 
