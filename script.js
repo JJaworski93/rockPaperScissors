@@ -37,7 +37,7 @@ function win(userChoice, compChoice) {
 	userChoice_div.classList.add('green-border:hover');
 	setTimeout(() => {userChoice_div.classList.remove('green-border')}, 1000);
 	setTimeout(() => {userChoice_div.classList.remove('green-border:hover')}, 1000);
-	if (userScore == 2) {
+	if (userScore == 5) {
 		choices_div.innerHTML  = `You won ${userScore}:${compScore}!`
 		action_p.innerHTML = `<button><span onclick="location.reload()">Play Again?</span></button>`;
 	}
@@ -55,7 +55,7 @@ function lose(userChoice, compChoice) {
 	userChoice_div.classList.add('red-border:hover');
 	setTimeout(() => {userChoice_div.classList.remove('red-border')}, 1000);
 	setTimeout(() => {userChoice_div.classList.remove('red-border:hover')}, 1000);
-	if (compScore == 2) {
+	if (compScore == 5) {
 		choices_div.innerHTML  = `You lost ${userScore}:${compScore}!`
 		action_p.innerHTML = `<button><span onclick="location.reload()">Play Again?</span></button>`;
 	}
