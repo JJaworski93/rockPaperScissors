@@ -174,4 +174,22 @@ button span {
 	filter: drop-shadow(0 2px 2px #022805);
 }
 
+footer {
+	position:absolute;
+    width: 100%;
+	bottom: 0px;
+	text-align: center;
+	background: lightgrey;
+	padding: 20px;
+	color: #24272E;
+	letter-spacing: 2px;
+	font-family: Asap, sans-serif;
+	font-weight: bold;
+}
+
+footer:hover {
+	font-size: 25px;
+	transition: all 0.3s ease;
+}
+
 
