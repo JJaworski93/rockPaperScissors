@@ -1,3 +1,7 @@
 # rockPaperScissors
 
-Rock Paper Scissors game (playing with PC). To preview: https://thebugger.io/rockPaperScissors/
+## Rock Paper Scissors game created with HTML, CSS and JS
+* player vs computer
+* first to score 5 points wins
+#### To play: 
+https://thebugger.io/rockPaperScissors/
